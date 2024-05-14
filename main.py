@@ -12,10 +12,12 @@ def get_account_url():
 
 def get_role_sts():
     sts_client = boto3.client('sts')
+    res = sts_client.get_caller_identity()
+    print(res)
     try:
         response = sts_client.get_federation_token(
             Name='Saltware_federation_user',
-            DurationSeconds=900,
+            DurationSeconds=10000,
             PolicyArns=[
                 {
                     'arn': 'arn:aws:iam::aws:policy/AdministratorAccess'
