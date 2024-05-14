@@ -5,7 +5,7 @@
 # 해당 애플리케이션 사용 방법
 
 ``` bash
-git clone git@github.com:fitcloud/temporary-login-url-generator.git & cd temporary-login-url-generator
+git clone https://github.com/fitcloud/temporary-login-url-generator & cd temporary-login-url-generator
 ```
 해당 명령줄을 `cloudshell`에서 실행합니다.
 <br><br>
